@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, inject, ref } from 'vue'
+import { defineComponent, inject } from 'vue'
 import { StateKey } from "../store/useState/model"
 import { StateStore } from "../store/useState/provider"
 
