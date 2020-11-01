@@ -16,7 +16,8 @@ declare namespace NodeJS {
   }
 }
 
-declare let process: NodeJS.Process
+// eslint-disable-next-line no-var
+declare var process: NodeJS.Process
 
 declare module '*.gif' {
   const src: string
