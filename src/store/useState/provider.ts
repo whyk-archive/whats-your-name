@@ -1,10 +1,10 @@
-import { reactive } from "vue"
+import { reactive } from 'vue'
 
 export const useState = () => {
   const state = reactive({
     name: 'whyk',
     newname: '',
-    answered: false
+    answered: false,
   })
 
   const updateName = (newname: string) => {
