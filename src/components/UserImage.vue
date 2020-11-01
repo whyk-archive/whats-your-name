@@ -1,5 +1,5 @@
 <template>
-  <img :src="`https://joeschmoe.io/api/v1/${state.name}`" :alt="`${state.name}'s image`">
+  <img :src="`https://joeschmoe.io/api/v1/${state.name}`" :alt="`${state.name}'s image`" />
 </template>
 
 <script lang="ts">
@@ -12,8 +12,8 @@ export default defineComponent({
     const { state } = inject(StateKey) as StateStore
 
     return {
-      state
+      state,
     }
-  }
+  },
 })
 </script>

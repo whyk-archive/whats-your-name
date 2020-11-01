@@ -17,8 +17,8 @@ export default defineComponent({
     const { state } = inject(StateKey) as StateStore
 
     return {
-      state
+      state,
     }
-  }
+  },
 })
 </script>

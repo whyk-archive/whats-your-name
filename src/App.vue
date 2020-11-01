@@ -15,13 +15,13 @@
 
 <script lang="ts">
 import { defineComponent, provide } from 'vue'
-import SwitchingView from "./components/SwichingView.vue";
-import UserImage from "./components/UserImage.vue"
-import InputName from "./components/InputName.vue"
-import AnswerBtn from "./components/AnswerBtn.vue"
-import ResetBtn from "./components/ResetBtn.vue"
-import { StateKey } from "./store/useState/model";
-import { useState } from "./store/useState/provider";
+import SwitchingView from './components/SwichingView.vue'
+import UserImage from './components/UserImage.vue'
+import InputName from './components/InputName.vue'
+import AnswerBtn from './components/AnswerBtn.vue'
+import ResetBtn from './components/ResetBtn.vue'
+import { StateKey } from './store/useState/model'
+import { useState } from './store/useState/provider'
 
 export default defineComponent({
   components: {
@@ -43,19 +43,19 @@ html {
   font-size: 62.5%;
 }
 #app {
-  max-width: 980px;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
   font-family: Avenir, Helvetica, Arial, sans-serif;
+  color: #2c3e50;
+  text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
 
