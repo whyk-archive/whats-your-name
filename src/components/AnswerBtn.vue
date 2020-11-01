@@ -25,20 +25,18 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  padding: 0;
-  appearance: none;
   display: inline-block;
+  padding: 10px;
+  margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 20px;
   font-size: 2rem;
-  background-color: #333;
   color: #fff;
+  cursor: pointer;
+  background-color: #333;
+  border: none;
   border-radius: 6px;
-  padding: 10px;
+  outline: none;
+  appearance: none;
 }
 </style>
