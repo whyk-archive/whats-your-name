@@ -32,7 +32,7 @@
     "@vuedx/typecheck": "^0.2.4-0",
     "@vuedx/typescript-plugin-vue": "^0.2.4-0",
     "commitlint": "^11.0.0",
-    "eslint": "^7.12.1",
+    "eslint": "^7.13.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^7.1.0",
