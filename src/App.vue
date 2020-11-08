@@ -20,8 +20,7 @@ import UserImage from './components/UserImage.vue'
 import InputName from './components/InputName.vue'
 import AnswerBtn from './components/AnswerBtn.vue'
 import ResetBtn from './components/ResetBtn.vue'
-import { StateKey } from './store/useState/model'
-import { useState } from './store/useState/provider'
+import { useState, StateKey } from './store/useState/provider'
 
 export default defineComponent({
   components: {

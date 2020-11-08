@@ -4,8 +4,8 @@
 
 <script lang="ts">
 import { defineComponent, inject } from 'vue'
-import { StateKey } from '../store/useState/model'
-import { StateStore } from '../store/useState/provider'
+import type { StateStore } from '../store/useState/model'
+import { StateKey } from '../store/useState/provider'
 
 export default defineComponent({
   setup() {

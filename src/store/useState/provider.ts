@@ -1,4 +1,5 @@
-import { reactive } from 'vue'
+import { reactive, InjectionKey } from 'vue'
+import { StateStore } from './model'
 
 export const useState = () => {
   const state = reactive({
@@ -33,4 +34,4 @@ export const useState = () => {
   }
 }
 
-export type StateStore = ReturnType<typeof useState>
+export const StateKey: InjectionKey<StateStore> = Symbol('StateStore')

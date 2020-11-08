@@ -1,4 +1,3 @@
-import type { InjectionKey } from 'vue'
-import type { StateStore } from './provider'
+import { useState } from './provider'
 
-export const StateKey: InjectionKey<StateStore> = Symbol('StateStore')
+export type StateStore = ReturnType<typeof useState>
