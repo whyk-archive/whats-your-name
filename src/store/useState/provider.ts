@@ -11,22 +11,25 @@ export const useState = () => {
   const updateName = (newname: string) => {
     state.name = newname
   }
-  const resetNewname = () => {
-    state.newname = ''
-  }
   const updateAnswered = () => {
     state.answered = !state.answered
   }
   const updateClicked = () => {
     state.clicked = true
   }
+  const resetState = () => {
+    state.name = 'whyk'
+    state.newname = ''
+    state.answered = false
+    state.clicked = false
+  }
 
   return {
     state,
     updateName,
-    resetNewname,
     updateAnswered,
     updateClicked,
+    resetState,
   }
 }
 

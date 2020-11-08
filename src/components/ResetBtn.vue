@@ -1,5 +1,5 @@
 <template>
-  <button @click="reset">Continue</button>
+  <button @click="resetState">Continue</button>
 </template>
 
 <script lang="ts">
@@ -9,16 +9,10 @@ import { StateStore } from '../store/useState/provider'
 
 export default defineComponent({
   setup() {
-    const { updateName, resetNewname, updateAnswered } = inject(StateKey) as StateStore
-
-    const reset = () => {
-      updateName('whyk')
-      resetNewname()
-      updateAnswered()
-    }
+    const { resetState } = inject(StateKey) as StateStore
 
     return {
-      reset,
+      resetState,
     }
   },
 })
