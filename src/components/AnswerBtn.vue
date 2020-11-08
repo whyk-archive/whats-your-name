@@ -9,9 +9,11 @@ import { StateStore } from '../store/useState/provider'
 
 export default defineComponent({
   setup() {
-    const { state, updateName, updateAnswered } = inject(StateKey) as StateStore
+    const { state, updateName, updateAnswered, updateClicked } = inject(StateKey) as StateStore
 
     const updateNewname = () => {
+      updateClicked()
+      if (!state.newname) return
       updateName(state.newname)
       updateAnswered()
     }

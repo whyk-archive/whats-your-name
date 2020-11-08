@@ -1,5 +1,6 @@
 <template>
-  <input v-model="state.newname" type="text" placeholder="Toika Asomaka" />
+  <input v-model="state.newname" type="text" placeholder="Toika Asomaka" required autofocus />
+  <span v-show="!state.newname && state.clicked">Please enter your name.</span>
 </template>
 
 <script lang="ts">
@@ -22,5 +23,11 @@ export default defineComponent({
 input {
   display: block;
   font-size: 1.8rem;
+}
+span {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: red;
 }
 </style>

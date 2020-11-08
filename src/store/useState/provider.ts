@@ -5,6 +5,7 @@ export const useState = () => {
     name: 'whyk',
     newname: '',
     answered: false,
+    clicked: false,
   })
 
   const updateName = (newname: string) => {
@@ -16,12 +17,16 @@ export const useState = () => {
   const updateAnswered = () => {
     state.answered = !state.answered
   }
+  const updateClicked = () => {
+    state.clicked = true
+  }
 
   return {
     state,
     updateName,
     resetNewname,
     updateAnswered,
+    updateClicked,
   }
 }
 
