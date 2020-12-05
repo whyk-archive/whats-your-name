@@ -10,7 +10,8 @@ export const useState = () => {
   })
 
   const updateName = (newname: string) => {
-    state.name = newname
+    const randString = Math.random().toString(32).substring(2)
+    state.name = `${newname}_${randString}`
   }
   const updateAnswered = () => {
     state.answered = !state.answered
